@@ -1,0 +1,10 @@
+Gnip mock streamer
+===============================
+
+Run with: `sbt run`
+
+Uses Akka Streams
+
+Akka Streams is an implementation of [Reactive Streams](http://www.reactive-streams.org/),
+which is a standard for asynchronous stream processing with non-blocking backpressure.
+
