@@ -5,9 +5,9 @@ import scalariform.formatter.preferences._
 
 name := "gnip-consumer"
 
-version := "1.1"
+version := "0.1"
 
-organization := "com.oxyme"
+organization := "com.github"
 
 scalaVersion := "2.11.6"
 
@@ -27,13 +27,5 @@ ScalariformKeys.preferences := ScalariformKeys.preferences.value
   .setPreference(PreserveDanglingCloseParenthesis, true)
 
 scalariformSettings
-
-assemblyMergeStrategy in assembly := {
-  case x if x.endsWith("spring.tooling") => MergeStrategy.last
-  case "application.conf"                => MergeStrategy.concat
-  case x =>
-    val oldStrategy = (assemblyMergeStrategy in assembly).value
-    oldStrategy(x)
-}
 
 fork in run := true

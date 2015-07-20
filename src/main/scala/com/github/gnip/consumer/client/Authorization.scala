@@ -1,7 +1,7 @@
 package com.github.gnip.consumer.client
 
 import akka.http.scaladsl.model.HttpRequest
-import akka.http.scaladsl.model.headers.{ BasicHttpCredentials, Authorization => AuthHeader}
+import akka.http.scaladsl.model.headers.{ BasicHttpCredentials, Authorization => AuthHeader }
 
 /**
  * Created by jero on 7-5-15.

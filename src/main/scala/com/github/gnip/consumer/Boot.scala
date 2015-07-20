@@ -1,8 +1,8 @@
 package com.github.gnip.consumer
 
-import akka.actor.{Props, ActorSystem}
-import akka.stream.{ActorMaterializerSettings, ActorMaterializer}
-import com.github.gnip.consumer.client.{BasicAuthorization, GnipStreamHttpClient}
+import akka.actor.{ Props, ActorSystem }
+import akka.stream.{ ActorMaterializerSettings, ActorMaterializer }
+import com.github.gnip.consumer.client.{ BasicAuthorization, GnipStreamHttpClient }
 import com.github.gnip.consumer.processing.ByteStringStreamProcessorBuilder
 
 object Boot extends App {
