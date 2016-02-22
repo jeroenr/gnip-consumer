@@ -1,13 +1,13 @@
 package com.github.gnip.consumer.client
 
 import akka.actor.{ Actor, ActorLogging, ActorRef }
-import akka.http._
 import akka.http.scaladsl._
 import akka.http.scaladsl.client.TransformerPipelineSupport._
 import akka.http.scaladsl.model.HttpMethods._
 import akka.http.scaladsl.model._
 import akka.http.scaladsl.model.headers.HttpEncodings._
 import akka.http.scaladsl.model.headers._
+import akka.http.scaladsl.settings.ClientConnectionSettings
 import akka.pattern.pipe
 import akka.stream._
 import akka.stream.scaladsl.{ Sink, Source }
@@ -22,7 +22,7 @@ class GnipStreamHttpClient(host: String, port: Int, account: String, processor: 
   private val system = context.system
   private implicit val executionContext = system.dispatcher
 
-  val client = Http(system).outgoingConnectionTls(host, port, settings = ClientConnectionSettings(system))
+  val client = Http(system).outgoingConnectionHttps(host, port, settings = ClientConnectionSettings(system))
 
   override def receive: Receive = {
     case response: HttpResponse if response.status.intValue / 100 == 2 =>

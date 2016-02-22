@@ -12,8 +12,8 @@ organization := "com.github"
 scalaVersion := "2.11.6"
 
 libraryDependencies ++= Seq(
-  "com.typesafe.akka" %% "akka-stream-experimental" % "1.0",
-  "com.typesafe.akka" %% "akka-http-experimental" % "1.0",
+  "com.typesafe.akka" %% "akka-stream" % "2.4.2",
+  "com.typesafe.akka" %% "akka-http-experimental" % "2.4.2",
   "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.5.2",
   "org.parboiled" % "parboiled-core" % "1.1.7",
   "net.fehmicansaglam" %% "tepkin" % "0.5",

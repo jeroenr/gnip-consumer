@@ -27,14 +27,14 @@ object JsonUtil {
       case (k, v: Long) => BsonLong(k, v)
       case (k, v: String) => BsonString(k, v)
       case (k, v: List[_]) => BsonArray(k, toBsonValueArray(v))
-      case (k, v: Map[String, Any]) => BsonObject(k, BsonValueObject(toBson(v)))
+      case (k, v: Map[String @unchecked, _]) => BsonObject(k, BsonValueObject(toBson(v)))
     })
   }
 
   private def toBsonValueArray(list: List[_]): BsonValueArray = {
     BsonValueArray(BsonDocument(list.zipWithIndex.map {
       case (value: List[_], index) => s"$index" := toBsonValueArray(value)
-      case (value: Map[String, Any], index) => s"$index" := toBson(value)
+      case (value: Map[String @unchecked, _], index) => s"$index" := toBson(value)
       case (value, index) => s"$index" := value
     }: _*))
   }
