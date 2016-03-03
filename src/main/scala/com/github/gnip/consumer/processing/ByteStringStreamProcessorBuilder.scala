@@ -7,8 +7,8 @@ import akka.stream.scaladsl._
 import akka.util.ByteString
 import com.github.gnip.consumer.util.JsonUtil
 import com.typesafe.config.Config
-import net.fehmicansaglam.bson.Bulk
-import net.fehmicansaglam.tepkin.MongoClient
+import com.github.jeroenr.bson.Bulk
+import com.github.jeroenr.tepkin.MongoClient
 
 import scala.concurrent.duration._
 import scala.util.{ Success, Try }

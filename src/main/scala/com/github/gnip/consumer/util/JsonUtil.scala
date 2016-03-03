@@ -2,10 +2,10 @@ package com.github.gnip.consumer.util
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.scala.DefaultScalaModule
-import net.fehmicansaglam.bson.BsonDocument
-import net.fehmicansaglam.bson.Implicits._
-import net.fehmicansaglam.bson.BsonDsl._
-import net.fehmicansaglam.bson.element._
+import com.github.jeroenr.bson.BsonDocument
+import com.github.jeroenr.bson.Implicits._
+import com.github.jeroenr.bson.BsonDsl._
+import com.github.jeroenr.bson.element._
 
 /**
  * Created by jero on 7-5-15.

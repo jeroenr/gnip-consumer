@@ -16,7 +16,7 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-http-experimental" % "2.4.2",
   "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.5.2",
   "org.parboiled" % "parboiled-core" % "1.1.7",
-  "net.fehmicansaglam" %% "tepkin" % "0.5",
+  "com.github.jeroenr" %% "tepkin" % "0.6",
   "org.scalatest" %% "scalatest" % "2.2.4" % "test"
 )
 
