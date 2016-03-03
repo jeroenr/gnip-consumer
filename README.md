@@ -1,6 +1,6 @@
-Gnip stream consumer
+Gnip stream consumer [![Build Status](https://travis-ci.org/jeroenr/gnip-consumer.svg?branch=master)](https://travis-ci.org/jeroenr/gnip-consumer)
 ===============================
-Consumes Gnip stream and writes to Mongo using reactive streams driver
+Consumes Gnip stream and writes to Mongo using [Reactive MongoDB Driver](https://github.com/jeroenr/tepkin)
 
 Run with: `sbt run`
 
