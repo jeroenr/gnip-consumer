@@ -1,6 +1,6 @@
 Gnip stream consumer
 ===============================
-Consumes Gnip stream and writes to Mongo using reactive streams driver
+Consumes Gnip stream and writes to Mongo using [Reactive MongoDB Driver](https://github.com/jeroenr/tepkin)
 
 Run with: `sbt run`
 
